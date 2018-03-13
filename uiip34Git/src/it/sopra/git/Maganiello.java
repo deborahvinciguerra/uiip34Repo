@@ -6,7 +6,9 @@ public class Maganiello {
 		
 		System.out.println("Gianluca Cocco");
 
-		System.out.println("Angelo MAnganiello");
+
+		System.out.println("Angelo Manganiello");
+		System.out.println("Trodella Eugenio");
 	}
 
 }
