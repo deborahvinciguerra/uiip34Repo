@@ -16,6 +16,7 @@ public class PrintName {
 		// TODO Auto-generated method stub
 		System.out.println("<<<<<ELENCO ISCRITTI IN ORDINE ALFABETICO>>>>>>");
 		System.out.println(myNameIs("Deborah", "Vinciguerra"));
+		System.out.println(myNameIs("Andrea", "Franza"));
 	}
 	
 	private static String myNameIs(String nome, String cognome){
