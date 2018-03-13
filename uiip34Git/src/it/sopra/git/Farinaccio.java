@@ -7,7 +7,7 @@ public class Farinaccio {
 		String nome = "Francesca";
 		String cognome = "Farinaccio";
 
-		System.out.println("Hello! My name is " + nome + " " + cognome);
+		System.out.println( nome + " " + cognome);
 		
 	}
 
