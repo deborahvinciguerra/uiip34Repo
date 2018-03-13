@@ -15,9 +15,12 @@ public class PrintName {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("<<<<<ELENCO ISCRITTI IN ORDINE ALFABETICO>>>>>>");
+		
 		System.out.println(myNameIs("Daniele", "D'angela"));
+		System.out.println(myNameIs("Gian Luigi", "Leone"));
 		System.out.println(myNameIs("Carla","Ventre"));
 		System.out.println(myNameIs("Deborah", "Vinciguerra"));
+		
 		
 		
 	}
