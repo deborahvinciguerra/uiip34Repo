@@ -4,7 +4,7 @@ public class Maganiello {
 	
 	public static void main(String[] args) {
 		
-		System.out.println("Gianluca Cocco");
+		System.out.println("Cocco Gianluca");
 
 
 		System.out.println("Angelo Manganiello");
