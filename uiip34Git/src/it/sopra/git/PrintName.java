@@ -17,6 +17,7 @@ public class PrintName {
 		System.out.println("<<<<<ELENCO ISCRITTI IN ORDINE ALFABETICO>>>>>>");
 		System.out.println(myNameIs("Deborah", "Vinciguerra"));
 		System.out.println(myNameIs("Andrea", "Franza"));
+		System.out.println(myNameIs("Natalia", "Albanese"));
 	}
 	
 	private static String myNameIs(String nome, String cognome){
