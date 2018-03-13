@@ -7,7 +7,6 @@ public class Albanese {
 		System.out.println("Farinaccio ");
 		System.out.println("Albanese ");
 		
-
 	}
 	
 }
