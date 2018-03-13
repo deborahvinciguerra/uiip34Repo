@@ -1,4 +1,4 @@
-package stampaNome;
+package it.sopra.git;
 
 public class Stampa {
 
