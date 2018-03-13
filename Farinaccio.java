@@ -1,11 +1,14 @@
-public class StampaNome{
-	
-	public String nome;
-	public String cognome;
-	
-	nome="Francesca";
-	cognome="Farinaccio";
-	
-	System.out.println("Hello World! I'm " + nome + cognome);
-	
+package stampaNome;
+
+public class Stampa {
+
+	public static void main(String[] args) {
+
+		String nome = "Francesca";
+		String cognome = "Farinaccio";
+
+		System.out.println("Hello! My name is " + nome + " " + cognome);
+		
+	}
+
 }
