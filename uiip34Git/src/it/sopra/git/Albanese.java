@@ -3,9 +3,9 @@ public class Albanese {
 
 	public static void main(String[] args) {
 
-		System.out.println("Albanese Natalia");
-		System.out.println("Farinaccio Francesca");
-		System.out.println("Franza Andrea");
+		System.out.println("Albanese ");
+		System.out.println("Farinaccio ");
+		System.out.println("Franza ");
 		
 
 	}
