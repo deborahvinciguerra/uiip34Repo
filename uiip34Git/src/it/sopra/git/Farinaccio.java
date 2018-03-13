@@ -1,6 +1,6 @@
 package it.sopra.git;
 
-public class Stampa {
+public class Farinaccio {
 
 	public static void main(String[] args) {
 
