@@ -1,8 +1,7 @@
 package it.sopra.git;
 
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
+import java.time.*;
+import java.util.*;
 
 public class Franza {
 
@@ -14,12 +13,16 @@ public class Franza {
 		System.out.println("Il mio nome è Andrea Franza");
 	}
 	
-	public static String calcolaEta (int anno, int mese, int giorno)
+	public static int calcolaEta (int anno, int mese, int giorno)
 	{
-		Date oggi = new GregorianCalendar(anno, mese, anno).getTime();
-		Date nascita = new GregorianCalendar(1991, 7, 23).getTime();
-		Long eta = nascita.getTime() - oggi.getTime();
-		eta = eta/(1000*60*60*24*365);
-		return eta.toString();
+		Date date = new Date();
+		LocalDate localDate = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+		int year = localDate.getYear();
+		int month = localDate.getMonthValue();
+		int day = localDate.getDayOfMonth();
+		
+		int eta = (year+(month-1+day/30)/10) - (anno+(mese-1+giorno/30)/10); 
+		
+		return eta;
 	}
 }
