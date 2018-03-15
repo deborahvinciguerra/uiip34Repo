@@ -3,6 +3,8 @@
  */
 package it.sopra.git;
 
+import java.util.GregorianCalendar;
+
 /**
  * @author dvinciguerra
  *
@@ -15,7 +17,8 @@ public class PrintName {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("<<<<<ELENCO ISCRITTI IN ORDINE ALFABETICO>>>>>>");
-		System.out.println(myNameIs("Deborah", "Vinciguerra"));
+		System.out.println(myNameIs("Angelo", "Manganiello"));
+		System.out.println(Maganiello.calcolaEta(new GregorianCalendar(1986,11,8)));
 	}
 	
 	private static String myNameIs(String nome, String cognome){
