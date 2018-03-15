@@ -19,6 +19,7 @@ public class PrintName {
 		// TODO Auto-generated method stub
 		System.out.println("<<<<<ELENCO ISCRITTI IN ORDINE ALFABETICO>>>>>>");
 		System.out.println(myNameIs("Gianluca", "Cocco") + " "+ GianlucaCocco.calcolaEta() + " anni");
+		System.out.println(myNameIs("Francesca", "Farinaccio") + "agit  "+ Farinaccio.calcolaEta() + " anni");
 		System.out.println(myNameIs("Carla", "Ventre"));
 
 		LocalDate birthDate = LocalDate.of(1992,06,19);
