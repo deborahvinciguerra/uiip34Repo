@@ -23,18 +23,9 @@ public class PrintName {
 		System.out.println(myNameIs("Carla", "Ventre") + "," + Ventre.calcolaEta(birthDate,LocalDate.of(2018,03,15))+"anni");
 		System.out.println(myNameIs("Angelo", "Manganiello"));
 		System.out.println(Maganiello.calcolaEta(new GregorianCalendar(1986,11,8)));
-<<<<<<< HEAD
-<<<<<<< HEAD
 		System.out.println(myNameIs("Eugenio", "Trodella") + " "+Trodella.calcolaEta());
 		System.out.println(myNameIs("Deborah", "Vinciguerra"));
-		
 
-		
-=======
->>>>>>> 73095fd923fbb8d291a704356aeb1afb42dc7a28
-
-=======
->>>>>>> 868dc1700073263195f7e15474dfd4ff646de466
 	}
 	
 	private static String myNameIs(String nome, String cognome){
