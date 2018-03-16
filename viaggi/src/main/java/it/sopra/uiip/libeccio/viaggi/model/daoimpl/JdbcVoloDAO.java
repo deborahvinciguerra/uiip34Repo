@@ -96,4 +96,9 @@ public class JdbcVoloDAO implements VoloDAO {
 
 	}
 
+	public Volo selectById(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
