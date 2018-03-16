@@ -6,7 +6,7 @@ import java.util.Vector;
 import it.sopra.uiip.viaggi.model.Aeroporto;
 
 public interface DaoAeroporto {
-	public Vector <Aeroporto> getAllAeroporto();
+	public Vector <Aeroporto> getAllAeroporto(Connection c);
 	public void addAeroporto (Connection c);
 
 }

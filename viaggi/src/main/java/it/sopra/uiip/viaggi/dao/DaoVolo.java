@@ -7,6 +7,6 @@ import it.sopra.uiip.viaggi.model.Volo;
 
 public interface DaoVolo {
 	public void addVolo (Connection c);
-	public Vector <Volo> getAllVolo();
+	public Vector <Volo> getAllVolo(Connection c);
 
 }
