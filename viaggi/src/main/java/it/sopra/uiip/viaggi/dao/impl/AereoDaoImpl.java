@@ -24,7 +24,7 @@ public class AereoDaoImpl implements DaoAereo
 			
 			while (rs.next())
 			{
-				a=new Aereo(rs.getString(0),rs.getInt(1),rs.getInt(2));
+				a=new Aereo(rs.getString(1),rs.getInt(2),rs.getInt(3));
 				
 			}
 			listaAereo.add(a);

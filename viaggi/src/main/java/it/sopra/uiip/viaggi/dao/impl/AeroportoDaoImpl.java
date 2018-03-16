@@ -29,7 +29,7 @@ public class AeroportoDaoImpl implements DaoAeroporto
 			rs = s.executeQuery("Select * from aereoporto");
 			while (rs.next())
 			{
-			 a=new Aeroporto(rs.getString(0),rs.getString(1),rs.getInt(2));
+			 a=new Aeroporto(rs.getString(1),rs.getString(2),rs.getInt(3));
 				
 			}
 			listaAeroporto.add(a);
