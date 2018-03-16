@@ -7,12 +7,8 @@ import it.sopra.uiip.viaggi.model.Aereo;
 import it.sopra.uiip.viaggi.model.Aeroporto;
 import it.sopra.uiip.viaggi.model.Volo;
 
-public interface Dao {
+public interface DaoAereo {
 	public Vector <Aereo> getAllAereo();
-	public Vector <Volo> getAllVolo();
-	public Vector <Aeroporto> getAllAeroporto();
 	public void addAereo (Connection c);
-	public void addVolo (Connection c);
-	public void addAeroporto (Connection c);
 	
 }
