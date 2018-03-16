@@ -9,26 +9,17 @@ public class Volo {
 	private int oraArr;
 	private String tipoAereo;
 	
-	public Volo() {
-		this.idVolo = -1;
-		this.giornoSett = "";
-		this.cittaPart = "";
-		this.cittaArr = "";
-		this.oraPart = -1;
-		this.oraArr = -1;
-		this.tipoAereo = "";
-	}
-	
-	public Volo(int idVolo, String giornoSett, String cittaPart, String cittaArr, int oraPart, int oraArr,
-			String tipoAereo) {
+	public Volo(int idVolo, String giornoSett, String cittaPart, String cittaArr, String tipoAereo, int oraPart, int oraArr) {
 		this.idVolo = idVolo;
 		this.giornoSett = giornoSett;
 		this.cittaPart = cittaPart;
 		this.cittaArr = cittaArr;
+		this.tipoAereo = tipoAereo;
 		this.oraPart = oraPart;
 		this.oraArr = oraArr;
-		this.tipoAereo = tipoAereo;
+		
 	}
+	
 	
 	public int getIdVolo() {
 		return idVolo;
