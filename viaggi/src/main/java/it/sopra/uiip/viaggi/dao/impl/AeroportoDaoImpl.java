@@ -22,7 +22,6 @@ public class AeroportoDaoImpl implements DaoAeroporto
 	{
 		listaAeroporto=new Vector<Aeroporto>();
 		
-		;
 		try {
 			Statement s = conn.createStatement();
 			ResultSet rs;

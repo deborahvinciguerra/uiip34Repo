@@ -9,6 +9,7 @@ import java.util.Vector;
 
 import it.sopra.uiip.viaggi.dao.DaoAereo;
 import it.sopra.uiip.viaggi.model.Aereo;
+import it.sopra.uiip.viaggi.model.Volo;
 
 public class AereoDaoImpl implements DaoAereo
 {
@@ -17,8 +18,9 @@ public class AereoDaoImpl implements DaoAereo
 	 Aereo a;
 	public void addAereo(Connection conn)
 	{
-		Statement s;
+		listaAereo=new Vector<Aereo>();
 		try {
+			Statement s;
 			s = conn.createStatement();
 			ResultSet rs = s.executeQuery("Select * from aereo");
 			

@@ -20,8 +20,9 @@ public class VoloDaoImpl implements DaoVolo
 	public void addVolo(Connection conn)
 	{
 		listaVoli=new Vector<Volo>();
-		Statement s;
+		
 		try {
+			Statement s;
 			s = conn.createStatement();
 			ResultSet rs = s.executeQuery("Select * from volo");
 			
