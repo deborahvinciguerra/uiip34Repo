@@ -13,7 +13,7 @@ import it.sopra.uiip.viaggi.dao.DaoVolo;
 import it.sopra.uiip.viaggi.model.Volo;
 
 
-public class VoloDaoImpl implements DaoVolo
+public static class VoloDaoImpl implements DaoVolo
 {
 	 Vector<Volo> listaVoli;
 	 Volo v;
@@ -36,7 +36,7 @@ public class VoloDaoImpl implements DaoVolo
 			e.printStackTrace();
 		}
 	}
-	  public Vector<Volo> getAllVolo() 
+	  public Vector<Volo> getAllVolo(Connection conn) 
 	   {
 	      return listaVoli;
 	   }
