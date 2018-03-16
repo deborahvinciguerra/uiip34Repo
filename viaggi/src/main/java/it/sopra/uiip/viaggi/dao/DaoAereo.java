@@ -1,6 +1,7 @@
 package it.sopra.uiip.viaggi.dao;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.Vector;
 
 import it.sopra.uiip.viaggi.model.Aereo;
