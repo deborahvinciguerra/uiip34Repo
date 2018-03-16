@@ -1,4 +1,4 @@
-package it.sopra.uiip.Model;
+package it.sopra.uiip.viaggi.model;
 
 public class Aeroporto {
 	private String citta;
