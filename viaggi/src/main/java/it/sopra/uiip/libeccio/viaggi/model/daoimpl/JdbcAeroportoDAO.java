@@ -16,8 +16,8 @@ public class JdbcAeroportoDAO implements AeroportoDAO {
 		try {
 			conn = ConnectionManager.getConnection();
 			stm = conn.createStatement();
-			String query = "INSERT INTO aeroporto VALUE ("+aeroporto.getCitta()+","+
-			aeroporto.getNazione()+","+aeroporto.getPiste()+")";			
+			String query = "INSERT INTO aeroporto(citta,nazione,npiste) VALUES ('"+aeroporto.getCitta()+"','"+
+					aeroporto.getNazione()+"',"+aeroporto.getPiste()+")";			
 			stm.executeUpdate(query);
 			conn.close();
 		} catch (ClassNotFoundException | SQLException e) {
@@ -29,20 +29,27 @@ public class JdbcAeroportoDAO implements AeroportoDAO {
 		Connection conn = null;
 		Statement stm = null ;
 		ResultSet rs = null;
-		String query = "SELECT * FROM aeroporto WHERE citta="+citta;
+		Aeroporto a = null;
+		String query = "SELECT * FROM aeroporto WHERE citta='"+citta+"';";
 		try {
+			conn = ConnectionManager.getConnection();
+			stm = conn.createStatement();
 			rs = stm.executeQuery(query);
 			if (rs.next() ) {
 				String cit = rs.getString("citta");
 				String naz =rs.getString("nazione");
 				int pis = rs.getInt("npiste");
-				return new Aeroporto(cit,naz,pis) ;
-			}			
+				a = new Aeroporto(naz, cit, pis);			}			
 		} catch (SQLException e) {
 			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
 		}
-		return null;
-		
+
+		if (a != null)
+			return a;
+		else 
+			return null;
 
 	}
 
@@ -52,8 +59,7 @@ public class JdbcAeroportoDAO implements AeroportoDAO {
 		try {
 			conn = ConnectionManager.getConnection();
 			stm = conn.createStatement();
-			String query = "UPDATE aeroporto SET nazione="+aeroporto.getNazione()+
-					",npiste="+aeroporto.getPiste()+"where citta="+aeroporto.getCitta();			
+			String query = "UPDATE aeroporto SET nazione='"+aeroporto.getNazione()+"',npiste="+aeroporto.getPiste()+" where citta='"+citta+"'";			
 			stm.executeUpdate(query);
 			conn.close();
 		} catch (ClassNotFoundException | SQLException e) {
