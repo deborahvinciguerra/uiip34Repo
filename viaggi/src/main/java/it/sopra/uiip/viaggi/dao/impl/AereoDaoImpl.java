@@ -1,12 +1,13 @@
 package it.sopra.uiip.viaggi.dao.impl;
 
 import java.sql.Connection;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Vector;
 
-import it.sopra.uiip.viaggi.dao.Dao;
+import it.sopra.uiip.viaggi.dao.DaoAereo;
 import it.sopra.uiip.viaggi.model.Aereo;
 
 public class AereoDaoImpl implements DaoAereo
