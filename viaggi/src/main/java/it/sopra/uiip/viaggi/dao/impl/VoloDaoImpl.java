@@ -40,4 +40,18 @@ public class VoloDaoImpl implements DaoVolo
 	   {
 	      return listaVoli;
 	   }
+	@Override
+	public void voliInPartenza(Connection c) {
+		try {
+			Statement s=c.createStatement();
+			ResultSet rs = s.executeQuery("Select distinct idVolo,cittaArr, oraPartenza, oraArrivo from voli "
+					+ "group by cittaPart");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
 }
