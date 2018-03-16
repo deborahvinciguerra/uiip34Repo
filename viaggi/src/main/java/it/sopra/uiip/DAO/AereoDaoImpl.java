@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Vector;
 
-import it.sopra.uiip.Model.Aereo;
+import it.sopra.uiip.viaggi.model.Aereo;
 
 public class AereoDaoImpl
 {

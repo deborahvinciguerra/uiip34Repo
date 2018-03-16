@@ -8,7 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
-import it.sopra.uiip.Model.Aeroporto;
+import it.sopra.uiip.viaggi.model.Aeroporto;
+
+
 
 public class AeroportoDaoImpl 
 {
