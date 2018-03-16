@@ -52,8 +52,7 @@ public class JdbcAeroportoDAO implements AeroportoDAO {
 		try {
 			conn = ConnectionManager.getConnection();
 			stm = conn.createStatement();
-			String query = "UPDATE aeroporto SET(citta="+aeroporto.getCitta()+
-					",nazione="+aeroporto.getNazione()+
+			String query = "UPDATE aeroporto SET nazione="+aeroporto.getNazione()+
 					",npiste="+aeroporto.getPiste()+"where citta="+aeroporto.getCitta();			
 			stm.executeUpdate(query);
 			conn.close();
