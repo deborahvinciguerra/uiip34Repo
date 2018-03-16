@@ -30,9 +30,9 @@ public class AeroportoDaoImpl implements DaoAeroporto
 			while (rs.next())
 			{
 			 a=new Aeroporto(rs.getString(1),rs.getString(2),rs.getInt(3));
-				
+			 listaAeroporto.add(a);
 			}
-			listaAeroporto.add(a);
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

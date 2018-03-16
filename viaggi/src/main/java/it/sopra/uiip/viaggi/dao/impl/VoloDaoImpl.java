@@ -28,9 +28,9 @@ public class VoloDaoImpl implements DaoVolo
 			while (rs.next())
 			{
 				v=new Volo(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getInt(6), rs.getInt(7));
-				
+				listaVoli.add(v);
 			}
-			listaVoli.add(v);
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
