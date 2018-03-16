@@ -10,7 +10,8 @@ public class JdbcAereoDAO implements AereoDAO {
 
 	}
 
-	public void selectByTipo(String tipo) {
+	public Aereo selectByTipo(String tipo) {
+		return null;
 		// TODO Auto-generated method stub
 
 	}

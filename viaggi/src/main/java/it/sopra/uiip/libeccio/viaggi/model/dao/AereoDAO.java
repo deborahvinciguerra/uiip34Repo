@@ -5,7 +5,7 @@ import it.sopra.uiip.libeccio.viaggi.model.Aereo;
 public interface AereoDAO {
 
 	public void insert (Aereo aereo);
-	public void selectByTipo (String tipo);
+	public Aereo selectByTipo (String tipo);
 	public void update (String tipo, Aereo aereo);
 	
 }

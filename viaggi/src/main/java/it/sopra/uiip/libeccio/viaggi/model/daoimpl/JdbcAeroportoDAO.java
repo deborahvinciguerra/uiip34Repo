@@ -10,7 +10,8 @@ public class JdbcAeroportoDAO implements AeroportoDAO {
 
 	}
 
-	public void selectByCitta(String citta) {
+	public Aeroporto selectByCitta(String citta) {
+		return null;
 		// TODO Auto-generated method stub
 
 	}
