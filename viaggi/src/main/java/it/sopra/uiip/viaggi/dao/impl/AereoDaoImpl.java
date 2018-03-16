@@ -9,6 +9,7 @@ import java.util.Vector;
 
 import it.sopra.uiip.viaggi.dao.DaoAereo;
 import it.sopra.uiip.viaggi.model.Aereo;
+import it.sopra.uiip.viaggi.model.Volo;
 
 public class AereoDaoImpl implements DaoAereo
 {
@@ -17,17 +18,18 @@ public class AereoDaoImpl implements DaoAereo
 	 Aereo a;
 	public void addAereo(Connection conn)
 	{
-		Statement s;
+		listaAereo=new Vector<Aereo>();
 		try {
+			Statement s;
 			s = conn.createStatement();
 			ResultSet rs = s.executeQuery("Select * from aereo");
 			
 			while (rs.next())
 			{
-				a=new Aereo(rs.getString(0),rs.getInt(1),rs.getInt(2));
-				
+				a=new Aereo(rs.getString(1),rs.getInt(2),rs.getInt(3));
+				listaAereo.add(a);
 			}
-			listaAereo.add(a);
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

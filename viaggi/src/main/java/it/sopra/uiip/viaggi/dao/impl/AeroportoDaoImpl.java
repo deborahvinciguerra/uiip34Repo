@@ -22,17 +22,16 @@ public class AeroportoDaoImpl implements DaoAeroporto
 	{
 		listaAeroporto=new Vector<Aeroporto>();
 		
-		;
 		try {
 			Statement s = conn.createStatement();
 			ResultSet rs;
 			rs = s.executeQuery("Select * from aereoporto");
 			while (rs.next())
 			{
-			 a=new Aeroporto(rs.getString(0),rs.getString(1),rs.getInt(2));
-				
+			 a=new Aeroporto(rs.getString(1),rs.getString(2),rs.getInt(3));
+			 listaAeroporto.add(a);
 			}
-			listaAeroporto.add(a);
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
