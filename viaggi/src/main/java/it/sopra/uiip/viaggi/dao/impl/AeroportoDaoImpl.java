@@ -14,7 +14,7 @@ import it.sopra.uiip.viaggi.model.Aeroporto;
 
 
 
-public static class AeroportoDaoImpl implements DaoAeroporto
+public class AeroportoDaoImpl implements DaoAeroporto
 {
 	Vector<Aeroporto>listaAeroporto;
 	Aeroporto a;
@@ -44,4 +44,5 @@ public static class AeroportoDaoImpl implements DaoAeroporto
 	   {
 	      return listaAeroporto;
 	   }
+	
 }

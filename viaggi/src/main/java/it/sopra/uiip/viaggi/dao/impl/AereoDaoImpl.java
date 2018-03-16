@@ -10,7 +10,7 @@ import java.util.Vector;
 import it.sopra.uiip.viaggi.dao.DaoAereo;
 import it.sopra.uiip.viaggi.model.Aereo;
 
-public static class AereoDaoImpl implements DaoAereo
+public class AereoDaoImpl implements DaoAereo
 {
 
 	 Vector<Aereo> listaAereo;

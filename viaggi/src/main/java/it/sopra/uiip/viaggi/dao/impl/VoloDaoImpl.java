@@ -13,7 +13,7 @@ import it.sopra.uiip.viaggi.dao.DaoVolo;
 import it.sopra.uiip.viaggi.model.Volo;
 
 
-public static class VoloDaoImpl implements DaoVolo
+public class VoloDaoImpl implements DaoVolo
 {
 	 Vector<Volo> listaVoli;
 	 Volo v;
