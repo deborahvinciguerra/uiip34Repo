@@ -1,5 +1,9 @@
 package it.sopra.uiip.libeccio.viaggi;
 
+import it.sopra.uiip.libeccio.viaggi.model.Volo;
+import it.sopra.uiip.libeccio.viaggi.model.dao.VoloDAO;
+import it.sopra.uiip.libeccio.viaggi.model.daoimpl.JdbcVoloDAO;
+
 /**
  * Hello world!
  *
@@ -7,7 +11,9 @@ package it.sopra.uiip.libeccio.viaggi;
 public class App 
 {
     public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    {   VoloDAO vDao= new JdbcVoloDAO() ;
+    	
+    	
+    	vDao.selectById(1);
     }
 }
