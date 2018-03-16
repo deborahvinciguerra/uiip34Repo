@@ -11,10 +11,13 @@ public class DAO {
 			Statement s = conn.createStatement();
 			ResultSet rs = s.executeQuery("Select * from aereo");
 			
-			while (rs.next()) {
+			while (rs.next())
+			{
 				
 			}
-		} catch (SQLException e) {
+		} 
+		catch (SQLException e)
+		{
 			
 			e.printStackTrace();
 		}
