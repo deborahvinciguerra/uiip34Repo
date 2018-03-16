@@ -1,4 +1,4 @@
-package it.sopra.uiip.DAO;
+package it.sopra.uiip.viaggi.dao.impl;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -8,11 +8,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
+import it.sopra.uiip.viaggi.dao.Dao;
 import it.sopra.uiip.viaggi.model.Aeroporto;
 
 
 
-public class AeroportoDaoImpl 
+public class AeroportoDaoImpl implements DaoAeroporto
 {
 	Vector<Aeroporto>listaAeroporto;
 	Aeroporto a;
