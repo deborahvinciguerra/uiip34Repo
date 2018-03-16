@@ -5,7 +5,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Vector;
 
-import it.sopra.uiip.viaggi.dao.impl.DaoImpl;
+import it.sopra.uiip.viaggi.dao.impl.AereoDaoImpl;
 import it.sopra.uiip.viaggi.model.Aereo;
 
 
@@ -15,9 +15,10 @@ public class App
     public static void main( String[] args )
     {
     	 try {
+    		 AereoDaoImpl lista = new AereoDaoImpl();
     		 DbAccess db = new DbAccess();
-    	 Connection conn = db.connect();
-    	 Vector<Aereo> lista_aereo  = DaoImpl.getAereo(conn);
+    		 Connection conn = db.connect();
+    		 Vector<Aereo> lista_aereo  = lista.getAllAereo();
  	    
 	     for(Aereo a : lista_aereo) {
 	    	 System.out.println(a.toString());
