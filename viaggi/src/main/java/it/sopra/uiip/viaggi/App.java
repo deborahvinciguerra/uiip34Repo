@@ -18,7 +18,8 @@ public class App
     		 AereoDaoImpl lista = new AereoDaoImpl();
     		 DbAccess db = new DbAccess();
     		 Connection conn = db.connect();
-    		 Vector<Aereo> lista_aereo  = lista.getAllAereo();
+    		 lista.addAereo(conn);
+    		 Vector<Aereo> lista_aereo  = lista.getAllAereo(conn);
  	    
 	     for(Aereo a : lista_aereo) {
 	    	 System.out.println(a.toString());
