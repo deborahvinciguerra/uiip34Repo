@@ -1,0 +1,35 @@
+<html>
+<body>
+
+<form action="libriView.jsp" method="post">
+<table>
+<tr><td><input type="submit" value="Visualizza Tutti i libri"></td></tr> 
+</table>
+</form>
+
+<form action="ricercaLibroTitolo.jsp" method="post">
+<table>
+<tr><th>Ricerca libro per titolo</th></tr>
+<tr><td><input type="text" name="titolo"></td></tr>
+<tr><td><center><input type="submit" value="Cerca"></center></td></tr> 
+</table>
+</form>
+
+<form action="ricercaLibroTitoloAutore.jsp" method="post">
+<table>
+<tr><th>Ricerca libro per autore</th></tr>
+<tr><td><input type="text" name="autore"></td></tr>
+<tr><td><center><input type="submit" value="Cerca"> </center></td></tr>
+</table>
+</form>
+<form action="prestito.jsp" method="post">
+<table>
+<tr><th>utente</th><th>autore</th></tr>
+<tr><td><input type="text" name="utente"></td>
+<td><input type="text" name="autore"></td></tr>
+<tr><td colspan="2"><center><input type="submit" value="Presta Libro"></center></td></tr> 
+</table>
+</form>
+
+</body>
+</html>
