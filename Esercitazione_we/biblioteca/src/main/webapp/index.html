@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Menù</title>
+</head>
+<body bgcolor = "lightblue">
+	<h1><p align = "center"> Benvenuto nell'archivio della Biblioteca  </p></h1>
+	<table align = "center">
+		<tr>
+			<td>
+				<form action="VisualizzaElencoLibriDisponibili.jsp" method="post">
+					<h2><p align = "center">Elenco Libri Disponibili </p></h2>
+						<table align = "center">
+							<tr><td colspan="2" align = "center"><br><input type="submit" value="Visualizza Elenco" required="required"></td></tr>
+						</table>
+				</form>
+			</td>
+	
+			<td>
+				<form action="RicercaLibroTitolo.jsp" method="post">
+					<h2><p align = "center">Ricerca Libro Per Titolo</p></h2>
+						<table align = "center">
+							<tr><td>Inserisci titolo libro: </td><td><input type="text" name="titolo" required="required"></td></tr>
+							<tr><td colspan="2" align = "center"><br><input type="submit" value="Ricerca Libro" required="required"></td></tr>
+						</table>
+				</form>
+			</td>
+			
+			<td>
+				<form action="RicercaLibroAutore.jsp" method="post">
+					<h2><p align = "center">Ricerca Libro Per Autore</p></h2>
+						<table align = "center">
+							<tr><td>Inserisci autore: </td><td><input type="text" name="autore" required="required"></td></tr>
+							<tr><td colspan="2" align = "center"><br><input type="submit" value="Ricerca Libro" required="required"></td></tr>
+						</table>
+				</form>
+			</td>
+			
+		</tr>
+	</table>
+	<br><br>
+	<table align = "center">
+		<tr>
+			<td>
+				<form action="PrestaLibro.jsp" method="post">
+				<h2><p align = "center">Presta Libro </p></h2>
+					<table align = "center">
+						<tr><td>Inserisci codice fiscale: </td><td><input type="text" name="codiceFisc" required="required"></td></tr>
+						<tr><td>Inserisci titolo libro: </td><td><input type="text" name="titolo" required="required"></td></tr>
+						<tr><td colspan="2" align = "center"><br><input type="submit" value="Presta Libro" required="required"></td></tr>
+					</table>
+				</form>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

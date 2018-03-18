@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Inserisci</servlet-name>
+  	<display-name>Inserisci</display-name>
+  	<description></description>
+  	<servlet-class>com.Inserisci</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>VisualizzaElencoLibriDisponibili</servlet-name>
+  	<display-name>VisualizzaElencoLibriDisponibili</display-name>
+  	<description></description>
+  	<servlet-class>it.sopra.uiip.biblioteca.web.VisualizzaElencoLibriDisponibili</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>VisualizzaElencoLibriDisp</servlet-name>
+  	<display-name>VisualizzaElencoLibriDisp</display-name>
+  	<description></description>
+  	<servlet-class>VisualizzaElencoLibriDisp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Inserisci</servlet-name>
+  	<url-pattern>/Inserisci</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>VisualizzaElencoLibriDisponibili</servlet-name>
+  	<url-pattern>/VisualizzaElencoLibriDisponibili</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>VisualizzaElencoLibriDisp</servlet-name>
+  	<url-pattern>/VisualizzaElencoLibriDisp</url-pattern>
+  </servlet-mapping>
+</web-app>
