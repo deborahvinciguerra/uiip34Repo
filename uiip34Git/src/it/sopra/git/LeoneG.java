@@ -3,11 +3,10 @@ package it.sopra.git;
 public class LeoneG {
 
 	public static void main(String[] args) {
-
-		System.out.println("D'angela");
-		System.out.println("Leone");
-		System.out.println("Ventre");
-
+		System.out.println("Ventre Carla");
+		System.out.println("Leone Gian Luigi");
+		System.out.println("D'angela Daniele");
+		
 	}
 
 }
