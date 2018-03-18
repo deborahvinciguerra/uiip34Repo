@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Biblioteca</title>
+</head>
+<body>
+
+<Table width=50%>
+<tr><td><a href="visualizzaLibri.jsp">Visualizza elenco libri</a></td>
+<td><a href="visualizzaPrestiti.jsp">Visualizza libri prestati</a></td></tr>
+</Table>
+
+<div>
+	<h3>Cerca libri per titolo</h3>
+	<form action="CercaLibroPerTitolo" method="post">
+		<input type="text" name="titoloLibro" placeholder="Titolo del libro">
+		<input type="submit" value="Cerca">
+	</form>
+</div>
+
+<div>
+	<h3>Cerca libri per autore</h3>
+	<form action="CercaLibroAutore" method="post">
+		<input type="text" name="nomeAutore" placeholder="Nome autore"><br>
+		<input type="text" name="cognomeAutore" placeholder="Cognome autore"><br>
+		<input type="submit" value="Cerca">
+	</form>
+</div>
+<br>
+<div>
+	<h3>Restituzione libro</h3>
+	<form action="Restituisci" method="post">
+		<input type="number" name="numeroTessera" placeholder="Numero tessera"><br>
+		<input type="text" name="titoloLibro" placeholder="Titolo del libro"><br>
+		<input type="submit" value="Restituisci">
+	</form>
+</div>
+</body>
+</html>

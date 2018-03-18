@@ -1,0 +1,57 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>CercaLibro</servlet-name>
+  	<display-name>CercaLibro</display-name>
+  	<description></description>
+  	<servlet-class>controller.CercaLibro</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CercaLibroAutore</servlet-name>
+  	<display-name>CercaLibroAutore</display-name>
+  	<description></description>
+  	<servlet-class>controller.CercaLibroAutore</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CercaLibroPerTitolo</servlet-name>
+  	<display-name>CercaLibroPerTitolo</display-name>
+  	<description></description>
+  	<servlet-class>controller.CercaLibroPerTitolo</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>PrestaLibro</servlet-name>
+  	<display-name>PrestaLibro</display-name>
+  	<description></description>
+  	<servlet-class>controller.PrestaLibro</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Restituisci</servlet-name>
+  	<display-name>Restituisci</display-name>
+  	<description></description>
+  	<servlet-class>controller.Restituisci</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CercaLibro</servlet-name>
+  	<url-pattern>/CercaLibro</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CercaLibroAutore</servlet-name>
+  	<url-pattern>/CercaLibroAutore</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CercaLibroPerTitolo</servlet-name>
+  	<url-pattern>/CercaLibroPerTitolo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>PrestaLibro</servlet-name>
+  	<url-pattern>/PrestaLibro</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Restituisci</servlet-name>
+  	<url-pattern>/Restituisci</url-pattern>
+  </servlet-mapping>
+</web-app>
